@@ -44,8 +44,8 @@ Content-Type: application/json
 {
     "hotel_room": 5,
     "user": 1,
-    "date_start": "2021-03-25",
-    "date_end": "2021-03-29"
+    "date_start": "2021-03-28",
+    "date_end": "2021-03-30"
 }
 ### Список всех броней
 GET {{base_url}}/reservations/

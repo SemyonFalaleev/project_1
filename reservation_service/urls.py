@@ -7,4 +7,5 @@ router.register("rooms", HotelRoomViewSet)
 router.register("reservations", RoomResevationViewSet)
 router.register("user", CustomUserViewSet)
 
+
 urlpatterns = router.urls
