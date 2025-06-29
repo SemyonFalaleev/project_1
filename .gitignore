@@ -1,0 +1,5 @@
+.env
+__pycache__
+poetry.lock
+test_api.html
+.ruff_cache

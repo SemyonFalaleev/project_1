@@ -1,0 +1,57 @@
+@base_url =  http://127.0.0.1:8000/api
+
+### Создание Юзера
+POST {{base_url}}/user/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "StrongPass123!",
+  "email": "testuser@example.com",
+  "first_name": "Test",
+  "last_name": "User",
+  "phone_number": "79991234567"
+}
+
+### Создание Отеля
+POST {{base_url}}/hotels/
+Content-Type: application/json
+
+{
+  "name": "Hilton Berlin",
+  "country": "Germany",
+  "city": "Berlin",
+  "street": "Mohrenstraße",
+  "street_number": "30"
+}
+
+### Создание комнаты
+POST  http://127.0.0.1:8000/api/rooms/
+Content-Type: application/json
+
+{
+
+  "hotel": 5,
+  "description": "просторный номер на 2 человка",
+  "number_room": 1
+
+}
+
+### Создание брони
+POST http://127.0.0.1:8000/api/reservations/
+Content-Type: application/json
+
+{
+    "hotel_room": 5,
+    "user": 1,
+    "date_start": "2021-03-25",
+    "date_end": "2021-03-29"
+}
+### Список всех броней
+GET {{base_url}}/reservations/
+
+### Удаление комнаты
+DELETE {{base_url}}/rooms/6/
+
+### Список комнат
+GET {{base_url}}/rooms/ 
